@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background: rgb(18,19,21);
+    background: linear-gradient(150deg, rgba(114,106,103,1) 0%, rgba(18,19,21,0.87) 50%);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #EAE8ED;
+    -webkit-box-shadow: 0 0 0px 40rem #2F3239 inset;
+    font-size: 25px;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+#content > form {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+#content > form > div:first-child {
+    display: flex;
+    height: 60px;
+    background-color: #A09DA4;
+    color: #EAE8ED;
+    width: 100%;
+    border: 2px solid #757881;
+    border-bottom-width: 0px;
+    border-radius: 33px 33px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    
+}
+#content > form > div:last-child {
+    display: flex;
+    height: 100%;
+    background-color: #2F3239;
+    color: #EAE8ED;
+    width: 100%;
+    border: 2px solid #757881;
+    border-top-width: 0px;
+    border-radius: 0px 0px 33px 33px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type=text], input[type=password] {
+    width: 300px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 2px solid #E3DEE5;
+    margin-bottom: 40px;
+    background-color: transparent !important;
+    color: #F5F0F6 !important;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+input {
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 40rem #2F3239 inset;
+    }
+    &:-webkit-autofill::first-line {
+        font-family: sans-serif;
+        font-size: 25px;
+    }
+}
+
+input:-webkit-autofill::first-line {font-size: 25px}
+
+#for_delete_autofill {
+    position: absolute;
+    top: -100px;
+}
+
+button[type=submit] {
+    height: 40px;
+    width: 180px;
+    color: #F8FBFF;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 700;
+    background-color: #656877;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

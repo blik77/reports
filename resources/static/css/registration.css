@@ -1,0 +1,10 @@
+.invalid-tooltip {
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    top: 85%;
+}
+
+.col-registration {
+    position: relative;
+}

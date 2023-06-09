@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная страница</title>
+  <link href="../static/css/mainpage.css" th:href="@{/css/mainpage.css}" rel="stylesheet" type="text/css" />
+
+  <script src="../static/js/jquery-3.6.1.min.js" th:src="@{/js/jquery-3.6.1.min.js}" type="text/javascript"></script>
+
+  <script src="../static/js/mainpage.js" th:src="@{/js/mainpage.js}" type="text/javascript"></script>
+</head>
+<body>
+<div id="video_container">
+  <video autoplay muted loop id="background_video" poster="../video/background.png" preload>
+    <source src="../video/background.mp4" type="video/mp4">
+  </video>
+
+  <div id="content">
+    <div id="content1">
+      АНАЛИТИКА ДЛЯ ПРОФЕССИОНАЛОВ
+      <div style="height: 7px;"></div>
+      ТОВАРНО-СЫРЬЕВЫХ РЫНКОВ
+    </div>
+    <div id="content2">
+      Комплексный обзор. Ценовые индикаторы. Тренды.
+    </div>
+    <div id="content3">
+      <button id="enter_system" class="button">Вход в систему</button>
+      <button id="get_access" class="button">Получить доступ</button>
+    </div>
+  </div>
+</div>
+<div id="about">
+  <div>
+    <div>
+      О команде
+    </div>
+    <div>
+      Компания объединяет экспертизу и передовые технологии для того, чтобы эффективно решать задачи мониторинга глобальных и региональных рынков углеводородного сырья и продуктов переработки нефти и газа.
+      <br>Наша команда более 30 лет специализируется на издании отраслевых информационных материалов, в том числе ценовых и аналитических отчетов о рынках нефти, нефтепродуктов, газа, угля, металлов, нефтехимии и полимеров России и стран ближнего зарубежья.
+    </div>
+  </div>
+  <div>
+    <div>
+      О системе
+    </div>
+    <div>
+      Информационно-аналитическая система простой и эффективный в работе инструмент для профессионалов товарно-сырьевых и финансовых рынков.
+      <br>В системе представлено около 400 отчетов и более 55000 уникальных ценовых индикаторов, которые публикуются на регулярной основе.
+      <br>Система позволяет:
+      <ul>
+        <li>узнать текущее значение котировок</li>
+        <li>выгрузить исторические значения котировок</li>
+        <li>получить pdf версию отчета</li>
+        <li>посмотреть актуальные новости</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

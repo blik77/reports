@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактор новостей</title>
+    <link href="../static/extjs6.2.0/theme-classic-all.css" th:href="@{/extjs6.2.0/theme-classic-all.css}" rel="stylesheet" type="text/css"/>
+
+    <link href="../static/css/icon.css" th:href="@{/css/icon.css}" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/index.css" th:href="@{/css/index.css}" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/newseditor.css" th:href="@{/css/newseditor.css}" rel="stylesheet" type="text/css"/>
+
+    <script sec:authorize="hasAuthority('USER')">
+        var admin = false;
+    </script>
+    <script sec:authorize="hasAuthority('ADMIN')">
+        var admin = true;
+    </script>
+    <script src="../static/extjs6.2.0/ext-all.js" th:src="@{/extjs6.2.0/ext-all.js}" type="text/javascript"></script>
+    <script src="../static/extjs6.2.0/locale-ru.js" th:src="@{/extjs6.2.0/locale-ru.js}" type="text/javascript"></script>
+
+    <script src="../static/js/jquery-3.6.1.min.js" th:src="@{/js/jquery-3.6.1.min.js}" type="text/javascript"></script>
+
+    <script src="../static/tinymce/js/tinymce/tinymce.min.js" th:src="@{/tinymce/js/tinymce/tinymce.min.js}" type="text/javascript"></script>
+    <script src="../static/tinymce/js/tinymce/langs/ru.js" th:src="@{/tinymce/js/tinymce/langs/ru.js}" type="text/javascript"></script>
+
+    <script src="../static/js/newseditor.js" th:src="@{/js/newseditor.js}" type="text/javascript" sec:authorize="isAuthenticated()"></script>
+</head>
+<body></body>
+</html>

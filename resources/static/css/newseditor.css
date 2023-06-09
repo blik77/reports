@@ -1,0 +1,33 @@
+@font-face{font-family:'ProximaNova';
+            src:url('../fonts/proximanovatab/proximanovatab-regular.eot');
+            src:url('../fonts/proximanovatab/proximanovatab-regular.eot?#iefix') format('embedded-opentype'),
+                url('../fonts/proximanovatab/proximanovatab-regular.ttf') format('truetype'),
+                url('../fonts/proximanovatab/proximanovatab-regular.woff') format('woff');
+            font-weight:normal;
+            font-style:normal; }
+@font-face{font-family:'ProximaNova';
+            src:url('../fonts/proximanovatab/proximanovatab-semibold.eot');
+            src:url('../fonts/proximanovatab/proximanovatab-semibold.eot?#iefix') format('embedded-opentype'),
+                url('../fonts/proximanovatab/proximanovatab-semibold.ttf') format('truetype'),
+                url('../fonts/proximanovatab/proximanovatab-semibold.woff') format('woff');
+            font-weight:bold;
+            font-style:normal; }
+@font-face{font-family:'ProximaNova';
+            src:url('../fonts/proximanovatab/proximanovatab-bold.eot');
+            src:url('../fonts/proximanovatab/proximanovatab-bold.eot?#iefix') format('embedded-opentype'),
+               url('../fonts/proximanovatab/proximanovatab-bold.ttf') format('truetype'),
+               url('../fonts/proximanovatab/proximanovatab-bold.woff') format('woff');
+            font-weight:900;
+            font-style:normal; }
+@font-face{font-family:'KortesFont';
+            src:url('../fonts/KortesFont.woff2') format('woff2');
+            font-weight:normal;
+            font-style:normal; }
+
+#news_content {
+    height: calc(100vh - 110px);
+}
+
+.tox-promotion {
+    display: none;
+}
